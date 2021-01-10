@@ -13,6 +13,7 @@
     animation: 1s ease-out 0s 1 shrinkFromTop;
     animation-delay: 100ms;
     animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
 .left-triangle {
@@ -88,41 +89,33 @@
     }
 }
 
-.grid {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-auto-rows: 1fr 18fr 1fr;
-}
-
-.one {
-    grid-column: 1 / 21;
+.grid-top {
+    grid-column: 1 / 4;
     grid-row: 1;
 }
 
-.two {
+.grid-left {
     grid-column: 1 / 2;
     grid-row: 2;
 }
 
-.three {
-    grid-column: 2 / 20;
+.grid-center {
+    grid-column: 2 / 3;
     grid-row: 2;
     z-index: 1;
 }
 
-.four {
-    grid-column: 20 / 21;
+.grid-right {
+    grid-column: 3 / 4;
     grid-row: 2;
 }
 
-.five {
-    grid-column: 1 / 21;
+.grid-bottom {
+    grid-column: 1 / 4;
     grid-row: 3;
 }
 
-.two, .four {
+.grid-right, .grid-left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +123,7 @@
     margin: 0px;
 }
 
-.center {
+.grid-center {
     display: flex;
     flex-direction: column;
     align-items: center;
