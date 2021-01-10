@@ -10,19 +10,14 @@
     bottom: 50%;
     background-color: #e2f0e0;
     clip-path: polygon(50% 100%, 100% 50%, 0% 50%);
-    animation: 1s ease-out 0s 1 shrinkFromTop;
-    animation-delay: 100ms;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    animation: 1s ease-in-out 100ms 1 shrinkFromTop forwards;
 }
 
 .left-triangle {
     right: 50%;
     background-color:#e0e4f0;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
-    animation: 1s ease-out 0s 1 shrinkFromLeft;
-    animation-delay: 100ms;
-    animation-fill-mode: forwards;
+    animation: 1s ease-in-out 100ms 1 shrinkFromLeft forwards;
 }
 
 .right-triangle {
@@ -30,9 +25,7 @@
     width: 50%;
     background-color: #e0e4f0;
     clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
-    animation: 1s ease-out 0s 1 shrinkFromRight;
-    animation-delay: 100ms;
-    animation-fill-mode: forwards;
+    animation: 1s ease-in-out 100ms 1 shrinkFromRight forwards;
 }
 
 .bottom-triangle {
@@ -40,9 +33,7 @@
     height: 50%;
     background-color: #e2f0e0;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-    animation: 1s ease-out 0s 1 shrinkFromBottom;
-    animation-delay: 100ms;
-    animation-fill-mode: forwards;
+    animation: 1s ease-in-out 100ms 1 shrinkFromBottom forwards;
 }
 
 @keyframes shrinkFromTop {
